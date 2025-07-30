@@ -7,21 +7,15 @@ import {
   Shield, 
   Zap, 
   Brain, 
-  Globe, 
   CheckCircle, 
-  Play,
   Menu,
   X,
   Mail,
-  Phone,
-  MapPin,
   Award,
-  TrendingUp,
   Building,
   Heart,
   Camera,
   Monitor,
-  Smartphone,
   Clock,
   BarChart3,
   Settings,
@@ -158,7 +152,10 @@ const ServantAILanding = () => {
     visible: { 
       opacity: 1, 
       y: 0,
-      transition: { duration: 0.8, ease: [0.23, 0.86, 0.39, 0.96] }
+      transition: { 
+        duration: 0.8, 
+        ease: [0.23, 0.86, 0.39, 0.96] as any
+      }
     }
   };
 
