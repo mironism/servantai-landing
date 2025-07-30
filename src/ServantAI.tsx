@@ -8,6 +8,7 @@ import {
   Zap, 
   Brain, 
   CheckCircle, 
+  Play,
   Menu,
   X,
   Mail,
@@ -313,9 +314,24 @@ const ServantAILanding = () => {
             </motion.p>
 
             <motion.div 
-              className="flex justify-center"
+              className="flex flex-col sm:flex-row gap-4 justify-center items-center"
               variants={fadeInUp}
             >
+              <motion.button
+                className="px-8 py-4 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg font-medium flex items-center gap-2 hover:from-indigo-700 hover:to-purple-700 transition-all"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <Play className="w-5 h-5" />
+                Try the Demo
+              </motion.button>
+              <motion.button
+                className="px-8 py-4 border border-border rounded-lg font-medium hover:bg-muted transition-colors"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                Join a Pilot
+              </motion.button>
               <motion.button
                 className="px-8 py-4 text-muted-foreground hover:text-foreground transition-colors flex items-center gap-2"
                 whileHover={{ scale: 1.05 }}
