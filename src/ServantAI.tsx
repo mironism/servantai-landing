@@ -63,40 +63,34 @@ const ServantAILanding = () => {
 
   const teamMembers: TeamMember[] = [
     {
-      name: "Matthias G.",
-      role: "Sales Manager/Director",
+      name: "Matthias",
+      role: "Sales Director",
       description: "Experienced in building customer relationships and driving sales growth.",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face"
     },
     {
-      name: "Maurice W.",
+      name: "Maurice",
       role: "Business Advisor",
       description: "Specialized in strategic development and leadership.",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop&crop=face"
     },
     {
-      name: "Sebastian W.",
+      name: "Sebastian",
       role: "Consulting Engineer & Product Manager",
       description: "Expert in aligning technical innovation with market needs.",
-      image: "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?w=300&h=300&fit=crop&crop=face"
     },
     {
-      name: "Miron P.",
+      name: "Miron",
       role: "Frontend & Backend Developer",
       description: "Full-stack developer specializing in modern web technologies.",
-      image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=300&h=300&fit=crop&crop=face"
     },
     {
-      name: "Enrico M.",
+      name: "Enrico",
       role: "AI Research Engineer",
       description: "Specialized in machine learning algorithms and neural networks.",
-      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&h=300&fit=crop&crop=face"
     },
     {
-      name: "Manuel W.",
+      name: "Manuel",
       role: "Visionary Founder",
       description: "Passionate Data Science enthusiast, specialized in Machine Learning and Computer Vision.",
-      image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=300&h=300&fit=crop&crop=face"
     }
   ];
 
@@ -194,8 +188,8 @@ const ServantAILanding = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <div className="w-8 h-8 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-lg flex items-center justify-center">
-                <Brain className="w-5 h-5 text-white" />
+              <div className="h-8 flex items-center">
+                <img src="/vite.svg" alt="Combo Labs" className="h-8 w-auto" />
               </div>
               <span className="text-xl font-bold">ServantAI</span>
             </motion.div>
@@ -310,7 +304,7 @@ const ServantAILanding = () => {
               className="text-xl md:text-2xl text-muted-foreground max-w-4xl mx-auto mb-8 leading-relaxed"
               variants={fadeInUp}
             >
-              ServantAI empowers hospitality and care teams with real-time AI — to improve response times, reduce stress, and raise service quality.
+              ServantAI empowers hospitality and care teams to focus on what truly matters – human connection, engagement and meaningful impact.
             </motion.p>
 
             <motion.div 
@@ -355,9 +349,10 @@ const ServantAILanding = () => {
                 <h3 className="text-2xl font-bold">Hospitality / Restaurants</h3>
               </div>
               <div className="space-y-4 text-muted-foreground">
-                <p>• Empty glasses and plates often go unnoticed for too long</p>
-                <p>• Staff is overwhelmed. Guests are dissatisfied</p>
-                <p>• Valuable food is wasted every day</p>
+                <p>• Enhanced guest satisfaction through timely and attentive service.</p>
+                <p>• Establish lasting service routines to ensure perfect guest interactions.</p>
+                <p>• Increased revenues by promptly identifying opportunities for additional orders.</p>
+                <p>• Reduced food waste with precise service management and better portion tracking.</p>
               </div>
             </motion.div>
 
@@ -371,9 +366,10 @@ const ServantAILanding = () => {
                 <h3 className="text-2xl font-bold">Care Facilities</h3>
               </div>
               <div className="space-y-4 text-muted-foreground">
-                <p>• Rising care needs meet limited resources</p>
-                <p>• Medical incidents remain undetected</p>
-                <p>• Caregivers are under constant pressure</p>
+                <p>• Improved resident safety with proactive, real-time incident detection.</p>
+                <p>• Reduced documentation efforts through automated, precise tracking.</p>
+                <p>• Empowered caregivers with more time for meaningful interactions.</p>
+                <p>• Efficient scalability to meet rising care demands smoothly.</p>
               </div>
             </motion.div>
           </div>
@@ -392,7 +388,7 @@ const ServantAILanding = () => {
           >
             <h2 className="text-3xl md:text-5xl font-bold mb-6">Our Solution</h2>
             <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
-              ServantAI detects in real time where and when service or assistance is needed – improving efficiency, safety, and guest/resident satisfaction.
+              ServantAI detects in real time where and when service or assistance is needed, logs behaviors – improving efficiency, safety, and guest/resident satisfaction.
             </p>
           </motion.div>
 
@@ -520,7 +516,7 @@ const ServantAILanding = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="text-3xl md:text-5xl font-bold mb-6">Technical Architecture</h2>
+            <h2 className="text-3xl md:text-5xl font-bold mb-6">Technical Architecture at a Glance</h2>
           </motion.div>
 
           <div className="grid md:grid-cols-2 gap-12">
@@ -552,7 +548,7 @@ const ServantAILanding = () => {
               <h3 className="text-xl font-bold mb-6">Our platform supports:</h3>
               <div className="space-y-4">
                 {[
-                  'Modular AI pipelines (per room/table)',
+                  'Modular AI pipelines per Room, Camera or ROI',
                   'On-device session detection and context handling',
                   'GDPR & EU AI Act compliance (high-risk class alignment)'
                 ].map((item, index) => (
@@ -563,6 +559,31 @@ const ServantAILanding = () => {
                 ))}
               </div>
             </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Challenges & Improvements */}
+      <section className="py-20 px-6">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="bg-card border border-border rounded-2xl p-8">
+              <h3 className="text-2xl font-bold mb-6">Challenges in the Hospitality Segment</h3>
+              <ul className="space-y-3 text-muted-foreground list-disc pl-5">
+                <li>Real-time detection of service needs so guests are always well attended</li>
+                <li>Direct suggestions for staff to streamline workflows and reduce wait times</li>
+                <li>More satisfied guests and more relaxed staff through intelligent support and clear task management</li>
+              </ul>
+            </div>
+
+            <div className="bg-card border border-border rounded-2xl p-8">
+              <h3 className="text-2xl font-bold mb-6">How ServantAI Improves Your Operations</h3>
+              <ul className="space-y-3 text-muted-foreground list-disc pl-5">
+                <li>Real-time detection of service needs so guests are always well attended</li>
+                <li>Direct suggestions for staff to streamline workflows and reduce wait times</li>
+                <li>More satisfied guests and more relaxed staff through intelligent support and clear task management</li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
@@ -599,23 +620,9 @@ const ServantAILanding = () => {
                 variants={fadeInUp}
                 whileHover={{ y: -5, scale: 1.02 }}
               >
-                <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-gradient-to-br from-indigo-500 to-purple-600 p-1">
-                  {member.image ? (
-                    <div className="w-full h-full rounded-full overflow-hidden">
-                      <img 
-                        src={member.image} 
-                        alt={member.name}
-                        className="w-full h-full object-cover object-center"
-                      />
-                    </div>
-                  ) : (
-                    <div className="w-full h-full rounded-full bg-muted flex items-center justify-center">
-                      <Users className="w-8 h-8 text-muted-foreground" />
-                    </div>
-                  )}
-                </div>
-                <h3 className="text-xl font-bold mb-2">{member.name}</h3>
-                <p className="text-indigo-600 font-medium mb-3">{member.role}</p>
+                {/* Avatar removed intentionally */}
+                <h3 className="text-xl font-bold mb-1">{member.name}</h3>
+                <p className="text-indigo-600 font-medium mb-1">{member.role}</p>
                 <p className="text-muted-foreground text-sm">{member.description}</p>
               </motion.div>
             ))}
